@@ -1,0 +1,8 @@
+<expr>      ::= <constExpr> | <binOpExpr> | <negExpr>
+<const>     ::= <int>
+<int>       ::= <digit> | <digit> <int>
+<digit>     ::= "0" | "1"
+<binOpExpr> ::= '(' <ws> <expr> <ws> ' ' <ws> <binOp> <ws> ' ' <ws> <expr> <ws> ')'
+<binOp>     ::= '+' | '*'
+<negExpr>    ::= '-' <ws> <expr>
+<ws>        ::= " " <ws> | ""
